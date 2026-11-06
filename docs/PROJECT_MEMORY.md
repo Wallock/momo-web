@@ -1,0 +1,11 @@
+# Monmora website memory
+
+2026-11-06: Created an independent Next.js 16 App Router / React 19 / TypeScript website at the user-requested `momo-web` directory. GGworld game code, database and assets remain separate; only original game artwork was copied into this project's public directory. No hosting registration or deployment performed.
+
+Brand: Monmora Online. Thai-language fantasy chibi game. Warm paper, jade and gold; local FC Vision Heavy body and FC Vision Wide Heavy display fonts (supplied OTF weight 850). Original new hero and class atlas, existing transparent wordmark and app icon. Responsive home page, class and region tabs, gallery, FAQ and three static guide routes.
+
+2026-11-06 pre-launch revision: information-only website. Removed every game-entry link and NEXT_PUBLIC_GAME_URL configuration. Coming-soon CTAs navigate to #timeline (articles use /#timeline). Four ordered stages: world introduction (available), test announcement, launch preparation and service opening. Future stages await announcements; no dates, countdown, subscriptions or registration are invented. Update roadmap data in lib/content.ts when actual announcements are approved. Site canonical origin remains configurable via NEXT_PUBLIC_SITE_URL (default local port 3200). Never put admin secrets in public environment variables or client code.
+
+Development and production preview use port 3200, bound to 127.0.0.1. Dependencies pinned with package-lock.json; use npm ci. Recheck guide controls/world content whenever game behavior changes. Current plan and acceptance criteria: docs/PLAN_03_ART_FONT.md (pre-launch behavior: docs/PLAN_02_PRELAUNCH.md) (initial implementation plan: docs/PLAN.md). Actual verification: docs/TEST_REPORT.md. Asset provenance: docs/ART.md.
+
+2026-11-06 visual revision: user-supplied FC Vision OTFs copied to app/fonts and loaded with next/font/local; fontsource/Noto dependencies removed. Supplied Non-commercial license memo preserved; commercial publication needs appropriate Fontcraft rights. New original transparent lotus/foliage border at public/art/lotus-border-v1.png. Decorative SVG lotus/kanok frames live in components/Decor.tsx. Scenic class/timeline backgrounds reuse original regional art. Gentle hero motes respect reduced motion. All game-entry removal and pending-date timeline behavior remain unchanged.
